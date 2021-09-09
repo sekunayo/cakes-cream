@@ -1,0 +1,27 @@
+@import '../styles/variables';
+
+@mixin nav-text{
+    text-decoration: none;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ffffffb8;
+    font-style: normal;
+    font-size: 1.0625rem;
+    &:hover{
+        color: $col-white;
+    }
+}
+
+@mixin logo{
+    font-size: 64px;
+    font-family: "Arizonia";
+    color: white;
+}
+
+@mixin btn-text{
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 2px;
+}

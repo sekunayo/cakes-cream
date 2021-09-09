@@ -1,0 +1,22 @@
+@import '../../styles/mixins';
+@import '../../styles/typography';
+@import '../../styles/variables';
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(6,auto);
+        grid-column-gap: 40px;
+    }
+    &__links{
+        @include nav-text;
+        @include transistion;
+        cursor: pointer;
+        &:hover{
+            color: $col-white;
+        }
+    }
+}

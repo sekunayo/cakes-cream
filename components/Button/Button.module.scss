@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+@import '../../styles/typography';
+@import '../../styles/mixins';
+
+
+.plain-button{
+   color: $col-white;
+    background-color: transparent;
+    padding: 13px 23px;
+    @include btn-text;
+    @include transistion;
+   &:hover{
+       background-color: $col-white;
+       color: $col-black;
+       border-radius: 4px;
+   }
+}
+
+.filled-button{
+   background-color: $col-purple;
+   color: $col-black;
+   padding: 13px 23px;
+   @include btn-text;
+   @include transistion;
+   border-radius: 4px;
+   &:hover{
+       background-color: $col-white;
+   }
+}

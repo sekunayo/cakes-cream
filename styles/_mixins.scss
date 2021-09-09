@@ -1,0 +1,8 @@
+@mixin center-column{
+    width: calc(100vw - 200px);
+    margin: auto;
+}
+
+@mixin transistion{
+    transition: all 0.2s linear;
+}
